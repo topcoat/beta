@@ -13,11 +13,13 @@
 </head>
 <body>
 <!--header-->
-<section id="header" class="header">
-<header itemscope itemtype="http://schema.org/WPHeader">
+
+<header id="header" itemscope itemtype="http://schema.org/WPHeader">
 <div class="wrap">
 {% include assets/logo.svg %}
- <a href="/"> </a>
+ <a href="/" class="logo">
+ <span class="header">Topcoat</span>
+ </a>
 <nav>
   <a itemprop="url" href="/about(todo)/">About</a>
   <a itemprop="url" href="/demo(todo)/">Demo</a>
@@ -34,8 +36,9 @@
 <figure> <img src="/assets/iceberg.svg"  width="400" height="400" /> </figure>
 <h1>Topcoat</h1>
 <h2> CSS for clean and fast web apps. </h2>
-<figure> <img src="/assets/logo.svg"  width="400" height="400" />
-</figure>
+{% include assets/logo.svg %}
+ <a href="/" class="logo">
+ </a>
 </section>
   <!-- Section 1: white portion/racoon -->
   <section id="what-is-topcoat" class="what-is-topcoat">

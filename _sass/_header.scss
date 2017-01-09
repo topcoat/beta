@@ -17,6 +17,14 @@ $rocket-purple: #695899; //taken from Adobe Illustrator Design File
   font-family: source-sans-pro, Helvetica, Arial, sans-serif, sans-serif;
   font-size: 18px;
 }
+.wrap{
+  padding:28px 0 10px;
+  width:80%auto;
+  max-width: 1200px;
+  margin:0 auto;
+  position:relative;
+  display:block;
+}
 .button {
   font-family: source-sans-pro, Helvetica, Arial, sans-serif, sans-serif;
   margin:0;
@@ -27,6 +35,23 @@ $rocket-purple: #695899; //taken from Adobe Illustrator Design File
   text-align: center;
   border-bottom: $rocket-purple 2px solid;
   border-radius: 5px;
+}
+.logo{
+  float: left;
+  line-height: 36px;
+}
+.a{
+  color: #25382f;
+  font-size:1em;
+  transition: color .2s linear;
+  cursor:auto;
+
+}
+a:webkit-anylink {
+  cursor: auto;
+}
+.nav{
+  float:right;
 }
 
 //   a {
