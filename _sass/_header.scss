@@ -67,6 +67,14 @@ a:webkit-anylink {
       border-bottom: 4px;
     }
   }
+  .after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    right: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+  }
 
 }
 
