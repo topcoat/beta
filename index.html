@@ -9,7 +9,7 @@
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <title>Topcoat</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-  <script type ="text/javascript" async src ="http://www.google-analytics.js"></script> <!--script to make microdata work with google -->
+  <!-- <script type ="text/javascript" async src ="http://www.google-analytics.js"></script> <!--script to make microdata work with google -->
 </head>
 <body>
 <!--header-->
@@ -18,6 +18,7 @@
 <div class="wrap">
 {% include assets/logo.svg %}
  <a href="/" class="logo">
+ <img src="logo.svg" alt=""/>
  <span class="header">Topcoat</span>
  </a>
 <nav>
@@ -29,11 +30,10 @@
 </div>
 ::after
 </header>
-</section>
 <!-- Top of Page -->
 <!-- Section 0: top blue portion/icebergs in background -->
 <section id="topcoat" class="topcoat">
-<figure> <img src="/assets/iceberg.svg"  width="400" height="400" /> </figure>
+<figure> <img src="/assets/iceberg.svg" /> </figure>
 <h1>Topcoat</h1>
 <h2> CSS for clean and fast web apps. </h2>
 {% include assets/logo.svg %}
@@ -94,14 +94,16 @@
       <h2>You can also clone Snap from GitHub</h2>
   </section>
   <!-- Bottom of Page-->
-  <section id="footer" class="footer">
-    <footer>
-      <hr class="line">
-      <a href="http://www.twitter.com"> <img src="/assets/twitter-icon.svg" alt="topcoat" style="width:42px;height:42px;border:0;"> </a>
-      <a href="http://www.github.com"> <img src="/assets/github-icon.svg" alt="topcoat" style="width:42px;height:42px;border:0;"> </a>
-      <a href="http://www.adobe.com"> <img src="/assets/adobe-icon.svg" alt="topcoat" style="width:42px;height:42px;border:0;"> </a>
+  <footer id="footer" class="footer">
+    <div class = "wrap">
+      <nav>
+      <a class="twitter-logo" href="http://www.twitter.com"></a>
+      <a class="github-logo" href="www.github.com"></a>
+      <a class="adobe-logo" href="www.adobe.com"></a>
+</nav>
+</div>
     </footer>
-  </section>
+
 </body>
 
 </html>
