@@ -44,7 +44,9 @@ $rocket-purple: #695899; //taken from Adobe Illustrator Design File
 .logo{
   float: left;
   line-height: 36px;
-}
+  background-image:url('../assets/logo.svg');
+  }
+
 .a{
   color: #25382f;
   font-size:1em;
