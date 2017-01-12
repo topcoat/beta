@@ -235,7 +235,7 @@ section .wrap.short{
   padding-left:37.5%;
   padding-right:0;
             }
-.header{
+header{
   position:fixed;
   height:90px;
   background:#fff;
@@ -253,10 +253,10 @@ section .wrap.short{
   right:0;
   border-bottom:2px solid rgba(0, 0, 0, .1);
             }
-.header .wrap{
+header.wrap{
   padding:28px 0 10px;
             }
-.header a{
+header.a{
   color:#25382f;
   font-size:1em;
   // -webkit-transition:color .2s linear;
@@ -265,31 +265,30 @@ section .wrap.short{
   // -o-transition:color .2s linear;
   // transition:color .2s linear;
             }
-.header .logo{
+header.logo{
   float:left;
   line-height:36px;
-            }
-.header .logo img{
+
   float:left;
   margin-top:-12px;
   margin-left:-10px;
   width:60px;
   height:60px;
             }
-.header .logo .header{
+header .logo .header{
   letter-spacing:-.05em;
   font-size:2em;
   font-weight:300;
               }
-.header nav{
+header nav{
   float:right;
               }
-.header nav a{
+header nav a{
   margin-left:40px;
   font-weight:400;
   font-size:.9em;
               }
-.header nav .bt{
+header nav .bt{
   color:#fff;
   // -webkit-transition:background-color .2s linear;
   // -moz-transition:background-color .2s linear;
@@ -331,13 +330,13 @@ footer nav a{
   position:relative;
                 }
 footer nav a.adobe-logo{
-  background-image:url('../assets/adobe-icon.svg');
+  background-image:url('.._includes/assets/adobe-icon.svg');
                }
 footer nav a.github-logo{
-  background-image:url('../assets/github-icon.svg');
+  background-image:url('.._includes/assets/github-icon.svg');
                 }
 footer nav a.twitter-logo{
-  background-image:url('../assets/twitter-icon.svg');
+  background-image:url('.._includes/assets/twitter-icon.svg');
                 }
 footer nav a:hover{
   background-color:#09b39c;
