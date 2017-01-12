@@ -1,269 +1,153 @@
+---
+---
 <!-- Header / Top of Page -->
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <title>Topcoat</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  <!-- <script type ="text/javascript" async src ="http://www.google-analytics.js"></script> <!--script to make microdata work with google -->
 </head>
-<!-- Top of Page -->
-
 <body>
-  <!-- Section 1: white portion/racoon -->
-  <section id="what-is-topcoat" class="what-is-topcoat">
-      <!-- preliminary id incase we want to scroll -->
-      <figure> <img src="racoonsvghere" width="400" height="400" />
-      </figure>
+<!--header-->
+<header id="header" itemscope itemtype="http://schema.org/WPHeader">
+<div class="wrap">
+ <a href="/" class="logo">
+   <img src="/assets/logo.svg" alt=""/>
+ <span class="header">Topcoat</span>
+ </a>
+<nav>
+  <a itemprop="url" href="http://topcoat.io/topcoat/" class ="">About</a>
+  <a itemprop="url" href="http://topcoat.io/topcoat/" class ="">Demo</a>
+  <a itemprop="url" href="http://topcoat.io/blog/" class ="">Blog</a>
+  <a class="bt" href="https://github.com/topcoat/topcoat.github.com">Download</a>
+</nav>
+</div>
+</header>
+<!-- Top of Page -->
+<!-- Section 0: top blue portion/icebergs in background, Hero -->
+<article>
+<section id="hero" class="primary">
+  <div class="wrap saw">
+<h1>Topcoat</h1>
+<h4> CSS for clean and fast web apps. </h4>
+<svg version="1.1" id="snap-logo" class="insert" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="250px" height="250px">
+            <defs>
+                <lineargradient id="bottom_1_" gradientunits="userSpaceOnUse"
+                    x1="196" y1="485.6281" x2="196" y2="732.5812"
+                    gradienttransform="matrix(1 0 0 1 -71 -486.5)">
+                    <stop  offset="0" stop-color="#002E3B"/>
+                    <stop  offset="1" stop-color="#002639"/>
+                </lineargradient>
+                <radialgradient id="right_2_" cx="146.3819" cy="449.8799"
+                    r="408.7811" gradienttransform="matrix(1 0 0 1 -71 -486.5)"
+                    gradientunits="userSpaceOnUse">
+                    <stop  offset="0" stop-color="#00BC85"/>
+                    <stop  offset="1" stop-color="#149D91"/>
+                </radialgradient>
+                <radialgradient id="left_1_" cx="139.0562" cy="454.2622"
+                    r="507.5908" gradienttransform="matrix(1 0 0 1 -71 -486.5)"
+                    gradientunits="userSpaceOnUse">
+                    <stop  offset="0" stop-color="#004473"/>
+                    <stop  offset="1" stop-color="#00345F"/>
+                </radialgradient>
+                <lineargradient id="top_1_" gradientunits="userSpaceOnUse"
+                    x1="195.922" y1="486.8864" x2="195.922" y2="732.5903"
+                    gradienttransform="matrix(1 0 0 1 -71 -486.5)">
+                    <stop  offset="0" stop-color="#002E3B"/>
+                    <stop  offset="1" stop-color="#002639"/>
+                </lineargradient>
+                </defs>
+            <polygon id="bottom" fill="url(#bottom_1_)" stroke="url(#bottom_1_)"
+            points="124.913,210.751 89.063,193.264 89.103,193.245 89.093,193.24
+            51,211.82 124.941,247.884 199,211.9 160.771,192.962 "/>
+            <polygon id="right" fill="url(#right_2_)" stroke="url(#right_2_)"
+            points="198.996,138.632 198.996,38.123 165.596,58.995 165.596,117.758
+            165.596,117.758 165.596,117.758 51.091,174.781 51.091,211.945 "/>
+            <polygon id="left" fill="url(#left_1_)" stroke="url(#left_1_)"
+            points="199,211.912 199,211.912 199,174.746 84.498,117.723 84.498,58.96
+            51.096,38.088 51.096,138.597 "/>
+            <polygon id="top" fill="url(#top_1_)" stroke="url(#top_1_)"
+            points="84.396,58.904 84.396,58.892 124.939,39.118 165.485,58.892
+            198.844,38.046 124.912,1.985 51,38.035 51,38.067 84.368,58.918 "/>
+        </svg>
+</div>
+</section>
+  <!-- Section 1: white portion/racoon , "" default-->
+  <section class="">
+    <div class ="wrap saw reverse">
       <h2>What is topcoat</h2>
-      <p>Etiam auctor, magna in sodales lobortis, nunc orci egestas urna, nec porta tortor massa et nibh. In ut ultrices nisi. Proin nec neque est. Quisque imperdiet dui eu enim sodales, sed mattis ligula convallis. Mauris eget quam ac augue luctus egestas
-        ac et purus. Integer a dolor id arcuvolutpat tincidunt ut imperdiet leo. Nam consectetur lacus eu neque blandit, id commodo turpis convallis.</p>
+      <p>Etiam auctor, magna in sodales lobortis, nunc orci egestas urna, nec porta tortor massa et nibh. In ut ultrices nisi. Proin nec neque est. Quisque imperdiet dui eu enim sodales, sed mattis ligula convallis. Mauris eget quam ac augue luctus egestas </p>
+    <img src="/assets/raccoon.svg" alt =""/>
+  </div>
   </section>
-  <!-- Section 2: purple portion/rocket -->
-  <section id="fast" class="fast">
+
+  <!-- Section 2: purple portion/rocket, class secondary -->
+  <section class="sofast">
+    <div class ="wrap saw">
       <h2>Sooooo Fast</h2>
       <p>Performance is our #1 goal. Every component we design is benchmarked for performance(link here). You can see our results.</p>
+      <br>
       <h2>Themable</h2>
       <p>Is that even a word? It should be! We love our theme, but we don't want to hit your brand over the head with it. Just add colors and voila!</p>
+      <br>
       <h2>Components Galore</h2>
       <p>We have the building blocks to get you up and running fast. Our growing set of components were born from CSS.</p>
-      <figure> <img src="rockesvghere" width="400" height="400" />
-      </figure>
+      <img src="/assets/rocket.svg" alt="" />
+    </div>
   </section>
-  <!-- Section 3: Black portion / polyhedrons -->
-  <section id="css" class="css">
-      <figure> <img src="polyhedrasvghere" width="400" height="400" />
-      </figure>
+  <!-- Section 3: Black portion / spheres -->
+  <section id="bem" class="bem">
+    <img src="/assets/sphere-2.svg" alt="" />
+      <img src="/assets/sphere-1.svg" alt="" />
       <h2>BEM Architecture</h2>
       <p>We believe CSS is ready for primetime. We are basing our architecture on BEM make your apps faster, less contextual and easier to manage. </p>
+      <br>
       <h2>Even our font is open source</h2>
       <p>The first open source font family contribution from Adobe, Source Sans Pro. It is served on Adobe Edge Web Fonts and Adobe Typekit. </p>
+      <br>
       <h2>Icons how you want them</h2>
       <p>We created over 100 icons to go with Topcoat. You can use them as SVG, PNG or semantic icon font. And yes, they are also open source.</p>
   </section>
   <!-- Section 4: Blue portion / trees -->
-  <section id="design" class="design">
+  <section class="design">  
+    <div class = "wrap saw">
       <h2>Design with Topcoat</h2>
       <p>Even though Topcoat was designed in code. We are including a PSD with all the components on our code base. </p>
+<br>
       <h2>CDN Resources</h2>
       <p>If you prefer to use a CDN to distribute your Topcoat assets then check out the Topcoat and Topcoat Icons distributions on cdnjs.</p>
-      <figure> <img src="treesvghere" width="400" height="400" />
-      </figure>
+<br>
+       <img src="/assets/tree.svg" alt="" />
+
+     <img src="/assets/tree.svg" alt="" />
+   </div>
   </section>
   <!-- Section 5: White Mountain Section-->
-  <section id="get-now" class="get-now">
-      <figure> <img src="mountainsvghere" width="400" height="400" />
-      </figure>
+  <section id="get-topcoat">
+      <div class = "wrap full center">
       <h2>Get Topcoat Now</h2>
-      <h2>You can also clone Snap from GitHub</h2> 
+      <a class ="largebutton" href="https://github.com/topcoat/topcoat.github.com">Download
+            <span class="sub-text">Version 1.0</span>
+        </a>
+      <p>You can also clone Topcoat from <a href="https://github.com/topcoat/topcoat.github.com">GitHub.</a></p>
+</div>
   </section>
+</article>
   <!-- Bottom of Page-->
-  <section id="footer" class="footer">
-    <footer>
-      <hr class="line">
-      <a href="www.twitter.com"> <img src="twitterlogohere" alt="topcoat" style="width:42px;height:42px;border:0;"> </a>
-      <a href="www.github.com"> <img src="githublogohere" alt="topcoat" style="width:42px;height:42px;border:0;"> </a>
-      <a href="www.adobe.com"> <img src="adobelogohere" alt="topcoat" style="width:42px;height:42px;border:0;"> </a>
+  <footer>
+    <div class = "wrap">
+      <nav>
+      <a class="twitter-logo" href="http://www.twitter.com"></a>
+      <a class="github-logo" href="http://www.github.com"></a>
+      <a class="adobe-logo" href="http://www.adobe.com"></a>
+</nav>
+</div>
     </footer>
-  </section>
 </body>
-
 </html>
-<!--
-<div id='g-website-draft-3-_topdoc_-box' class='ai2html'>
-  <style type='text/css' media='screen,print'>
-    .g-artboard {
-      margin:0 auto;
-    }
-  </style>
-  <div id='g-website-draft-3-_topdoc_-Artboard_1' class='g-artboard g-artboard-v3 ' data-min-width='1200'>
-    <style type='text/css' media='screen,print'>
-      #g-website-draft-3-_topdoc_-Artboard_1{
-        position:relative;
-        overflow:hidden;
-        width:1200px;
-      }
-      .g-aiAbs{
-        position:absolute;
-      }
-      .g-aiImg{
-        display:block;
-        width:100% !important;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 p{
-        font-family:nyt-franklin,arial,helvetica,sans-serif;
-        font-size:13px;
-        line-height:18px;
-        margin:0;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle0 {
-        font-size:25px;
-        line-height:30px;
-        color:#263a30;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle1 {
-        font-size:16px;
-        line-height:19px;
-        text-align:right;
-        color:#263a30;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle2 {
-        font-size:16px;
-        line-height:19px;
-        text-align:right;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle3 {
-        font-size:80px;
-        line-height:96px;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle4 {
-        font-size:32px;
-        line-height:38px;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle5 {
-        font-size:36px;
-        line-height:43px;
-        color:#333333;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle6 {
-        font-size:20px;
-        line-height:28px;
-        color:#333333;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle7 {
-        font-size:36px;
-        line-height:43px;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle8 {
-        font-size:20px;
-        line-height:28px;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle9 {
-        font-size:20px;
-        line-height:28px;
-        color:#9fecf4;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle10 {
-        font-size:20px;
-        line-height:28px;
-        color:#b5f7f7;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle11 {
-        font-size:24px;
-        line-height:29px;
-        text-align:center;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle12 {
-        font-size:12px;
-        line-height:14px;
-        text-align:center;
-        color:#ffffff;
-      }
-      #g-website-draft-3-_topdoc_-Artboard_1 .g-aiPstyle13 {
-        font-size:20px;
-        line-height:28px;
-        text-align:center;
-        color:#333333;
-      }
-      .g-aiPtransformed p { white-space: nowrap; }
-    </style>
-    <div id='g-website-draft-3-_topdoc_-Artboard_1-graphic'>
-      <img id='g-ai0-0'
-        class='g-aiImg'
-        src='website-draft-3-_topdoc_-Artboard_1.png'
-        />
-      <div id='g-ai0-1' class='g-Layer_1 g-aiAbs' style='top:0.7679%;left:13.7479%;width:12.5%;'>
-        <p class='g-aiPstyle0'>Topdoc</p>
-      </div>
-      <div id='g-ai0-2' class='g-Layer_1 g-aiAbs' style='top:0.9386%;right:22.5%;width:35.8333%;'>
-        <p class='g-aiPstyle1'>About                    Demos                  Blog  </p>
-      </div>
-      <div id='g-ai0-3' class='g-Layer_1 g-aiAbs' style='top:0.9386%;right:10%;width:12.9167%;'>
-        <p class='g-aiPstyle2'>Download</p>
-      </div>
-      <div id='g-ai0-4' class='g-Layer_1 g-aiAbs' style='top:6.0296%;left:9.9934%;width:57.0833%;'>
-        <p class='g-aiPstyle3'>Topdoc</p>
-      </div>
-      <div id='g-ai0-5' class='g-Layer_1 g-aiAbs' style='top:8.4471%;left:10.4167%;width:43.75%;'>
-        <p class='g-aiPstyle4'>Flexible CSS documentation and tooling.</p>
-      </div>
-      <div id='g-ai0-6' class='g-Layer_1 g-aiAbs' style='top:17.6621%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle5'>What is Topdoc</p>
-      </div>
-      <div id='g-ai0-7' class='g-Layer_1 g-aiAbs' style='top:19.0842%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle6'>Etiam auctor, magna in sodales lobortis, nunc orci egestas urna, nec porta tortor massa et nibh. In ut ultrices nisi. Proin nec neque est. Quisque imperdiet dui eu enim sodales, sed mattis ligula convallis. Mauris eget quam ac augue luctus egestas ac et purus. Integer a dolor id arcu volutpat tincidunt ut imperdiet leo. Nam consectetur lacus eu neque blandit, id commodo turpis convallis.</p>
-      </div>
-      <div id='g-ai0-8' class='g-Layer_1 g-aiAbs' style='top:30.9727%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>Soooo Fast!</p>
-      </div>
-      <div id='g-ai0-9' class='g-Layer_1 g-aiAbs' style='top:32.3948%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle8'>Performance is our #1 goal. Every component we design is benchmarked for performance. You can see our results.</p>
-      </div>
-      <div id='g-ai0-10' class='g-Layer_1 g-aiAbs' style='top:35.5802%;left:9.997%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>Themeable</p>
-      </div>
-      <div id='g-ai0-11' class='g-Layer_1 g-aiAbs' style='top:37.0023%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle8'>Is that even a word? It should be! We love our theme, but we don&rsquo;t want to hit your brand over the head with it. Just add colors and voila!</p>
-      </div>
-      <div id='g-ai0-12' class='g-Layer_1 g-aiAbs' style='top:40.0739%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>Components Galore</p>
-      </div>
-      <div id='g-ai0-13' class='g-Layer_1 g-aiAbs' style='top:41.4676%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle8'>We have the building blocks to get you up and running fast. Our growing set of components were born from CSS.</p>
-      </div>
-      <div id='g-ai0-14' class='g-Layer_1 g-aiAbs' style='top:52.2184%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>BEM Architecture</p>
-        <p>&nbsp;</p>
-      </div>
-      <div id='g-ai0-15' class='g-Layer_1 g-aiAbs' style='top:53.6121%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle9'>We believe CSS is ready for primetime. We are basing our architecture on BEM make your apps faster, less contextual and easier to manage.</p>
-      </div>
-      <div id='g-ai0-16' class='g-Layer_1 g-aiAbs' style='top:56.7691%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>Even our font is open source</p>
-      </div>
-      <div id='g-ai0-17' class='g-Layer_1 g-aiAbs' style='top:58.1627%;left:39.5817%;width:50.4167%;'>
-        <p class='g-aiPstyle8'>The first open source font family contribution from Adobe, Source Sans Pro. It is served on Adobe Edge Web Fonts and Adobe Typekit.</p>
-      </div>
-      <div id='g-ai0-18' class='g-Layer_1 g-aiAbs' style='top:61.3197%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>Icons how you want them</p>
-      </div>
-      <div id='g-ai0-19' class='g-Layer_1 g-aiAbs' style='top:62.7133%;left:39.5833%;width:50.4167%;'>
-        <p class='g-aiPstyle8'>We created over 100 icons to go with Topcoat. You can use them as SVG, PNG or semantic icon font. And yes, they are also open source.</p>
-      </div>
-      <div id='g-ai0-20' class='g-Layer_1 g-aiAbs' style='top:72.0705%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>Design with Topcoat</p>
-      </div>
-      <div id='g-ai0-21' class='g-Layer_1 g-aiAbs' style='top:73.4926%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle10'>Even though Topcoat was designed in code. We are including a PSD with all the components on our code base.</p>
-      </div>
-      <div id='g-ai0-22' class='g-Layer_1 g-aiAbs' style='top:76.678%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle7'>CDN Resources</p>
-      </div>
-      <div id='g-ai0-23' class='g-Layer_1 g-aiAbs' style='top:78.1001%;left:10%;width:50.4167%;'>
-        <p class='g-aiPstyle8'>If you prefer to use a CDN to distribute your Topcoat assets then check out the Topcoat and Topcoat Icons distributions on cdnjs.</p>
-      </div>
-      <div id='g-ai0-24' class='g-Layer_1 g-aiAbs' style='top:88.7372%;left:61.4%;width:11.1333%;margin-left:-5.5667%;'>
-        <p class='g-aiPstyle11'>Download</p>
-      </div>
-      <div id='g-ai0-25' class='g-Layer_1 g-aiAbs' style='top:88.7656%;left:33.75%;width:21.6667%;'>
-        <p class='g-aiPstyle5'>Get Topcoat now</p>
-      </div>
-      <div id='g-ai0-26' class='g-Layer_1 g-aiAbs' style='top:89.4198%;left:61.4%;width:11.1333%;margin-left:-5.5667%;'>
-        <p class='g-aiPstyle12'>Version 1.0</p>
-      </div>
-      <div id='g-ai0-27' class='g-Layer_1 g-aiAbs' style='top:90.6143%;left:51.25%;width:40.8333%;margin-left:-20.4167%;'>
-        <p class='g-aiPstyle13'>You can also clone Snap from GitHub.</p>
-      </div>
-    </div>
-
-
-  </body>
-
-</html>
--->
