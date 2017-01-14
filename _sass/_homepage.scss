@@ -199,9 +199,9 @@ section {
   bottom: -60px;
   content: '';
   position: absolute;
-  border-top: 60px $rocket-purple solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
+  border-top: 600px $rocket-purple solid;
+  border-left: transparent 600px solid;
+  border-right: transparent 600px solid;
   z-index: 2;
 }
 
@@ -227,9 +227,9 @@ section {
   bottom: -60px;
   content: '';
   position: absolute;
-  border-top: 60px #ea7373 solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
+  border-top: 600px $iceberg-blue solid;
+  border-left: transparent 600px solid;
+  border-right: transparent 600px solid;
   z-index: 2;
 }
 
@@ -255,9 +255,9 @@ section {
   bottom: -60px;
   content: '';
   position: absolute;
-  border-top: 60px #ea7373 solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
+  border-top: 600px $white solid;
+  border-left: transparent 600px solid;
+  border-right: transparent 600px solid;
   z-index: 2;
 }
 
@@ -295,7 +295,7 @@ section {
 
 .logo {
   float: left;
-  line-height: 36px;
+  line-height: 20px;
   margin-top: -12px;
   margin-left: -10px;
   width: 60px;
