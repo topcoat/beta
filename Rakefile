@@ -164,7 +164,7 @@ end
 # rake build
 desc "Build the site"
 task :build do
-  execute("bundle exec jekyll build")
+  execute("bundle exec jekyll build --config _config-local.yml")
 end
 
 # rake watch
@@ -202,11 +202,12 @@ end
 # rake test html, urls, images, scripts
 desc "build and test website"
 task :html_proofer do
-  sh "bundle exec jekyll build"
+  Rake::Task["build"].invoke
   HTMLProofer.check_directory("./_site", {
     :empty_alt_ignore => true,
     :url_ignore => [
-      'http://localhost:4000'
+      'http://localhost:4000',
+      'http://bench.topcoat.io'
     ],
     :cache => {
       :timeframe => '1d'

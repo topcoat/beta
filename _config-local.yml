@@ -1,7 +1,7 @@
 title: Topcoat
 email: garthdb@gmail.com
 description: CSS for clean and fast web apps.
-baseurl: "/beta" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://topcoat.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
