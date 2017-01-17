@@ -1,14 +1,15 @@
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../font/SourceSansPro-Regular.otf');
+  src: url('SourceSansPro-Regular.otf');
 }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('../font/SourceSansPro-Light.otf');
+  src: url('SourceSansPro-Light.otf');
   font-weight: 200;
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
 }
 h1{
   font-weight:500;
@@ -18,36 +19,31 @@ h1{
 
 h2 {
   font-weight: 200;
-  font-size: 36px;
-  font-family: Helvetica, Arial, Sans-Serif;
-}
-h2{
-  font-weight: 200;
   font-size: 2.2em;
 }
-h3{
+h3 {
   font-weight: 200;
   font-size: 1.4em;
 }
-h4{
+h4 {
   font-size: 1.8em;
   font-weight: 200;
 }
-h5,h6{
+h5, h6 {
   font-size: 100%;
   font-weight: 300;
   }
-p{
+p {
   margin: .5em 0 1.2em;
   font-weight: 200;
   line-height: 1.6em;
   color: 777;
 }
-b{
+b {
   font-weight: 500;
   color: #25382f;
 }
-a{
+a {
   color: #00a99d;
   text-decoration: none;
   a:hover{
