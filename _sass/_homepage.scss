@@ -231,33 +231,33 @@ section {
   z-index: 2;
 }
 
-.section--design {
-  //design section, iceberg blue, trees
-  background: $iceberg-blue;
-  color: #fff;
-}
+//.section--design {
+//   //design section, iceberg blue, trees
+//   background: $iceberg-blue;
+//   color: #fff;
+// }
 
-.section--design p {
-  color: #fff;
-}
+// .section--design p {
+//   color: #fff;
+// }
 
-.section--design p a {
-  color: #fff;
-  font-weight: 500;
-}
+// .section--design p a {
+//   color: #fff;
+//   font-weight: 500;
+// }
 
-.section--design .wrap:after {
-  @extend %wrap-after;
-  left: 2%;
-  right: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 600px $iceberg-blue solid;
-  border-left: transparent 600px solid;
-  border-right: transparent px solid;
-  z-index: 2;
-}
+// .section--design .wrap:after {
+//   @extend %wrap-after;
+//   left: 2%;
+//   right: auto;
+//   bottom: -60px;
+//   content: '';
+//   position: absolute;
+//   border-top: 600px $iceberg-blue solid;
+//   border-left: transparent 600px solid;
+//   border-right: transparent px solid;
+//   z-index: 2;
+// }
 
 .section--bem {
   //sphere brown goes here, bem / css section
@@ -485,6 +485,36 @@ footer nav a:hover.adobe-logo {
 // .hero .wrap img.insert {
 //   top: 50px;
 // }
+
+.section--design-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  height: 530px;
+  width: 100%;
+  background-color: $iceberg-blue;
+  align-items: center;
+}
+
+.designtext-flex-item{
+  float:left;
+  color: $white;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.designsvg-flex-item{
+  float: right;
+  width: 340px;
+  height: 340px;
+  background:url('../assets/trees.svg') no-repeat;
+  vertical-align: middle;
+}
 
 .section--get-topcoat {
   height: 445px;
