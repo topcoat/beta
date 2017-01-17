@@ -1,1 +1,2 @@
+ignore-front-matter true
 rules "~MD002", "~MD013", "~MD026", "~MD028"
