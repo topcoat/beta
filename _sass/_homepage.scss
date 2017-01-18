@@ -105,33 +105,33 @@ a:hover {
   color: #00a99d;
 }
 
-hr {
-  clear: both;
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
-}
+// hr {
+//   clear: both;
+//   border: none;
+//   border-top: 1px solid #eee;
+//   margin: 0 auto;
+//   width: 80%;
+//   max-width: 1200px;
+// }
 
-.wrap {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
+// .wrap {
+//   width: 80%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   position: relative;
+// }
 
-%wrap-after {
-  right: 2%;
-  left: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 60px #fff solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
-  z-index: 2;
-}
+// %wrap-after {
+//   right: 2%;
+//   left: auto;
+//   bottom: -60px;
+//   content: '';
+//   position: absolute;
+//   border-top: 60px #fff solid;
+//   border-left: transparent 60px solid;
+//   border-right: transparent 60px solid;
+//   z-index: 2;
+// }
 
 .flex-container {
   display: -webkit-flex;
@@ -157,79 +157,79 @@ hr {
 }
       
 
-section {
-  position: relative;
-}
+// section {
+//   position: relative;
+// }
 
-.wrap--reverse {
-  text-align: right;
-  padding-right: 0;
-  padding-left: 25%;
-}
+// .wrap--reverse {
+//   text-align: right;
+//   padding-right: 0;
+//   padding-left: 25%;
+// }
 
-.wrap--center {
-  text-align: center;
-  min-height: 130px;
-  margin-top: 40px;
-}
+// .wrap--center {
+//   text-align: center;
+//   min-height: 130px;
+//   margin-top: 40px;
+// }
 
-.section--primary {
-  //class that the 'hero id ' section is in
-  background: $iceberg-blue;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 10%;
-}
+// .section--primary {
+//   //class that the 'hero id ' section is in
+//   background: $iceberg-blue;
+//   color: #fff;
+//   background-repeat: no-repeat;
+//   background-position: 50% 10%;
+// }
 
-.section--primary p {
-  color: #fff;
-}
+// .section--primary p {
+//   color: #fff;
+// }
 
-.section--primary p a {
-  color: #fff;
-  font-weight: 500;
-}
+// .section--primary p a {
+//   color: #fff;
+//   font-weight: 500;
+// }
 
-.section--primary .wrap:after {
-  @extend %wrap-after;
-  left: 2%;
-  right: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 60px $white solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
-  z-index: 2;
-}
+// .section--primary .wrap:after {
+//   @extend %wrap-after;
+//   left: 2%;
+//   right: auto;
+//   bottom: -60px;
+//   content: '';
+//   position: absolute;
+//   border-top: 60px $white solid;
+//   border-left: transparent 60px solid;
+//   border-right: transparent 60px solid;
+//   z-index: 2;
+// }
 
-.section--so-fast {
-  //rocket purple goes here, soooo fast section
-  background: $rocket-purple;
-  color: #fff;
-}
+// .section--so-fast {
+//   //rocket purple goes here, soooo fast section
+//   background: $rocket-purple;
+//   color: #fff;
+// }
 
-.section--so-fast p {
-  color: #fff;
-}
+// .section--so-fast p {
+//   color: #fff;
+// }
 
-.section--so-fast p a {
-  color: #fff;
-  font-weight: 500;
-}
+// .section--so-fast p a {
+//   color: #fff;
+//   font-weight: 500;
+// }
 
-.section--so-fast .wrap:after {
-  @extend %wrap-after;
-  left: 2%;
-  right: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 600px $rocket-purple solid;
-  border-left: transparent 600px solid;
-  border-right: transparent 600px solid;
-  z-index: 2;
-}
+// .section--so-fast .wrap:after {
+//   @extend %wrap-after;
+//   left: 2%;
+//   right: auto;
+//   bottom: -60px;
+//   content: '';
+//   position: absolute;
+//   border-top: 600px $rocket-purple solid;
+//   border-left: transparent 600px solid;
+//   border-right: transparent 600px solid;
+//   z-index: 2;
+// }
 
 //.section--design {
 //   //design section, iceberg blue, trees
@@ -287,11 +287,11 @@ section {
 //   z-index: 2;
 // }
 
-.wrap--reverse {
-  @extend .wrap;
-  padding-left: 37.5%;
-  padding-right: 0;
-}
+// .wrap--reverse {
+//   @extend .wrap;
+//   padding-left: 37.5%;
+//   padding-right: 0;
+// }
 
 .site-header {
   position: fixed;
@@ -485,6 +485,69 @@ footer nav a:hover.adobe-logo {
 // .hero .wrap img.insert {
 //   top: 50px;
 // }
+.section--what-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  height: 485px;
+  width: 100%;
+  background-color: $white;
+  align-items: center;
+}
+
+
+.whatsvg-flex-item{
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 285px;
+  height: 315px;
+  background:url('../assets/rac.svg') no-repeat;
+  vertical-align: middle;
+}
+.whattext-flex-item{
+  padding-left: 40px;
+  padding-right:20px;
+  float:right;
+  color: #333;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.section--sofast-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  height: 725px;
+  width: 100%;
+  background-color: $rocket-purple;
+  align-items: center;
+}
+
+.sofasttext-flex-item{
+  float:left;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $white;
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.sofastsvg-flex-item{
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 340px;
+  height: 340px;
+  background:url('../assets/rocket.svg') no-repeat;
+  vertical-align: middle;
+}
 .section--bem-flex-container {
   display: -webkit-flex;
   display: flex;
@@ -498,12 +561,16 @@ footer nav a:hover.adobe-logo {
 
 .bemsvg-flex-item{
   float: left;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 285px;
   height: 315px;
   background:url('../assets/bothspheres.svg') no-repeat;
   vertical-align: middle;
 }
 .bemtext-flex-item{
+  padding-left: 40px;
+  padding-right:20px;
   float: right;
   color: $white;
   h2 {
@@ -526,11 +593,11 @@ footer nav a:hover.adobe-logo {
 }
 
 .designtext-flex-item{
+  padding-left: 20px;
+  padding-right: 20px;
   float:left;
   color: $white;
-  h2 {
-    margin-bottom: 1rem;
-  }
+
 
   p {
     font-size: 1.25rem;
@@ -539,6 +606,8 @@ footer nav a:hover.adobe-logo {
 
 .designsvg-flex-item{
   float: right;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 340px;
   height: 340px;
   background:url('../assets/trees.svg') no-repeat;
