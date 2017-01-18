@@ -259,33 +259,33 @@ section {
 //   z-index: 2;
 // }
 
-.section--bem {
-  //sphere brown goes here, bem / css section
-  background: $sphere-brown;
-  color: #fff;
-}
+// .section--bem {
+//   //sphere brown goes here, bem / css section
+//   background: $sphere-brown;
+//   color: #fff;
+// }
 
-.section--bem p {
-  color: #fff;
-}
+// .section--bem p {
+//   color: #fff;
+// }
 
-.section--bem p a {
-  color: #fff;
-  font-weight: 500;
-}
+// .section--bem p a {
+//   color: #fff;
+//   font-weight: 500;
+// }
 
-.section--bem .wrap:after {
-  @extend %wrap-after;
-  left: 2%;
-  right: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 60px #ea7373 solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
-  z-index: 2;
-}
+// .section--bem .wrap:after {
+//   @extend %wrap-after;
+//   left: 2%;
+//   right: auto;
+//   bottom: -60px;
+//   content: '';
+//   position: absolute;
+//   border-top: 60px #ea7373 solid;
+//   border-left: transparent 60px solid;
+//   border-right: transparent 60px solid;
+//   z-index: 2;
+// }
 
 .wrap--reverse {
   @extend .wrap;
@@ -485,6 +485,35 @@ footer nav a:hover.adobe-logo {
 // .hero .wrap img.insert {
 //   top: 50px;
 // }
+.section--bem-flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  height: 725px;
+  width: 100%;
+  background-color: $sphere-brown;
+  align-items: center;
+}
+
+
+.bemsvg-flex-item{
+  float: left;
+  width: 285px;
+  height: 315px;
+  background:url('../assets/bothspheres.svg') no-repeat;
+  vertical-align: middle;
+}
+.bemtext-flex-item{
+  float: right;
+  color: $white;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
 
 .section--design-flex-container {
   display: -webkit-flex;
