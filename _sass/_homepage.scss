@@ -114,24 +114,24 @@ a:hover {
 //   max-width: 1200px;
 // }
 
-// .wrap {
-//   width: 80%;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   position: relative;
-// }
+.wrap {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
 
-// %wrap-after {
-//   right: 2%;
-//   left: auto;
-//   bottom: -60px;
-//   content: '';
-//   position: absolute;
-//   border-top: 60px #fff solid;
-//   border-left: transparent 60px solid;
-//   border-right: transparent 60px solid;
-//   z-index: 2;
-// }
+%wrap-after {
+  right: 2%;
+  left: auto;
+  bottom: -60px;
+  content: '';
+  position: absolute;
+  border-top: 60px #fff solid;
+  border-left: transparent 60px solid;
+  border-right: transparent 60px solid;
+  z-index: 2;
+}
 
 .flex-container {
   display: -webkit-flex;
@@ -167,41 +167,41 @@ a:hover {
 //   padding-left: 25%;
 // }
 
-// .wrap--center {
-//   text-align: center;
-//   min-height: 130px;
-//   margin-top: 40px;
-// }
+.wrap--center {
+  text-align: center;
+  min-height: 130px;
+  margin-top: 40px;
+}
 
-// .section--primary {
-//   //class that the 'hero id ' section is in
-//   background: $iceberg-blue;
-//   color: #fff;
-//   background-repeat: no-repeat;
-//   background-position: 50% 10%;
-// }
+.section--primary {
+  //class that the 'hero id ' section is in
+  background: $iceberg-blue;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
 
-// .section--primary p {
-//   color: #fff;
-// }
+.section--primary p {
+  color: #fff;
+}
 
-// .section--primary p a {
-//   color: #fff;
-//   font-weight: 500;
-// }
+.section--primary p a {
+  color: #fff;
+  font-weight: 500;
+}
 
-// .section--primary .wrap:after {
-//   @extend %wrap-after;
-//   left: 2%;
-//   right: auto;
-//   bottom: -60px;
-//   content: '';
-//   position: absolute;
-//   border-top: 60px $white solid;
-//   border-left: transparent 60px solid;
-//   border-right: transparent 60px solid;
-//   z-index: 2;
-// }
+.section--primary .wrap:after {
+  @extend %wrap-after;
+  left: 2%;
+  right: auto;
+  bottom: -60px;
+  content: '';
+  position: absolute;
+  border-top: 60px $white solid;
+  border-left: transparent 60px solid;
+  border-right: transparent 60px solid;
+  z-index: 2;
+}
 
 // .section--so-fast {
 //   //rocket purple goes here, soooo fast section
