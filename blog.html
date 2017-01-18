@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: /blog/
+---
+<ul>
+{% for post in site.posts %}
+  <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | xml_escape }}</a></li>
+{% endfor %}
+</ul>
