@@ -352,7 +352,7 @@ a:hover {
 
 .site_nav .a{
   color: $headingdarkgreen;
-  font size:0.9em;
+  font-size:.9em;
   margin-left: 20px;
   font-weight: 400;
 }
@@ -504,7 +504,7 @@ footer nav a:hover.adobe-logo {
   height: 485px;
   width:100%;
   position: relative;
-  background-image: url(../assets/iceberg.svg);
+  background-image: url('../assets/iceberg.svg');
   background-repeat: no-repeat;
   background-position: 50% 10%;
   align-items: center;
