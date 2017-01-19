@@ -481,19 +481,20 @@ footer nav a:hover.adobe-logo {
   position: relative;
   background-image: url('../assets/iceberg.svg');
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  //background-position: 50% 10%;
   align-items: center;
 }
 
 
 .primarytext-flex-item{
+  max-width: 510px;
   padding-left: 40px;
   padding-right:20px;
   float:right;
   color: $white;
-  h2 {
-    margin-bottom: 1rem;
-  }
+  // h2 {
+  //   margin-bottom: 1rem;
+  // }
 
   p {
     font-size: 1.25rem;
@@ -503,34 +504,36 @@ footer nav a:hover.adobe-logo {
   float: left;
   padding-left: 20px;
   padding-right: 20px;
-  width: 335px;
-  height: 220px;
+  width: 265px;
+  height: 190px;
   background:url('../assets/logo.svg') no-repeat;
-  vertical-align: middle;
+ 
 }
 
 .section--what-flex-container {
+  max-width: 585px;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   height: 485px;
   width: 100%;
   background-color: $white;
-  align-items: center;
+  bottom: 0;
+  
 }
 
 .whatsvg-flex-item{
-  float: left;
+  position:relative;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 285px;
+  width: 50%;
   height: 315px;
   background:url('../assets/rac.svg') no-repeat;
-  vertical-align: middle;
 }
 
 .whattext-flex-item{
-  float:right;
+  position:relative;
   padding-left: 20px;
   padding-right:20px;
   float:right;
@@ -555,6 +558,7 @@ footer nav a:hover.adobe-logo {
 }
 
 .sofasttext-flex-item{
+  max-width: 605px;
   float:left;
   padding-left: 20px;
   padding-right: 20px;
@@ -594,6 +598,7 @@ footer nav a:hover.adobe-logo {
   vertical-align: middle;
 }
 .bemtext-flex-item{
+  max-width: 605px;
   padding-left: 40px;
   padding-right:20px;
   float: right;
@@ -618,6 +623,7 @@ footer nav a:hover.adobe-logo {
 }
 
 .designtext-flex-item{
+  max-width: 605px;
   padding-left: 20px;
   padding-right: 20px;
   float:left;
