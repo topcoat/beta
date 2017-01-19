@@ -133,7 +133,7 @@ a:hover {
   z-index: 2;
 }
 
-.flex-container {
+.header--flex-container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -143,7 +143,7 @@ a:hover {
   flex-wrap: wrap;
          
         }
-.flex-item {
+.header--flex-item {
   display:flex;
   align-items: center;
   background-color: $white;
@@ -151,7 +151,7 @@ a:hover {
   margin: 3px;
   padding: 10px;
         }
-.flex-item img{
+.header--flex-item img{
   flex-grow:0;
   flex-shrink:0;
 }
@@ -173,35 +173,35 @@ a:hover {
   margin-top: 40px;
 }
 
-.section--primary {
-  //class that the 'hero id ' section is in
-  background: $iceberg-blue;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 10%;
-}
+// .section--primary {
+//   //class that the 'hero id ' section is in
+//   background: $iceberg-blue;
+//   color: #fff;
+//   background-repeat: no-repeat;
+//   background-position: 50% 10%;
+// }
 
-.section--primary p {
-  color: #fff;
-}
+// .section--primary p {
+//   color: #fff;
+// }
 
-.section--primary p a {
-  color: #fff;
-  font-weight: 500;
-}
+// .section--primary p a {
+//   color: #fff;
+//   font-weight: 500;
+// }
 
-.section--primary .wrap:after {
-  @extend %wrap-after;
-  left: 2%;
-  right: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 60px $white solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
-  z-index: 2;
-}
+// .section--primary .wrap:after {
+//   @extend %wrap-after;
+//   left: 2%;
+//   right: auto;
+//   bottom: -60px;
+//   content: '';
+//   position: absolute;
+//   border-top: 60px $white solid;
+//   border-left: transparent 60px solid;
+//   border-right: transparent 60px solid;
+//   z-index: 2;
+// }
 
 // .section--so-fast {
 //   //rocket purple goes here, soooo fast section
@@ -294,6 +294,8 @@ a:hover {
 // }
 
 .site-header {
+  display:flex;
+  flex-direction:row;
   position: fixed;
   height: 85px;
   width: 100%;
@@ -307,14 +309,14 @@ a:hover {
 
 
 .site-header .a {
+  float:right;
   color: $headingdarkgreen;
   font-size: 1em;
-  // -webkit-transition:color .2s linear;
-  // -moz-transition:color .2s linear;
-  // -ms-transition:color .2s linear;
-  // -o-transition:color .2s linear;
-  // transition:color .2s linear;
-  vertical-align: middle;
+  -webkit-transition:color .2s linear;
+  -moz-transition:color .2s linear;
+  -ms-transition:color .2s linear;
+  -o-transition:color .2s linear;
+  transition:color .2s linear;
 }
 
 .logo {
@@ -339,24 +341,34 @@ a:hover {
 }
 
 .site-nav {
-  vertical-align: middle;
-  margin: right;
-  overflow: hidden;
-
-}
-
-.site-nav ul {
   float:right;
-  vertical-align: middle;
-  margin:0;
-  padding:0;
+  display:block;
+  //font-size:18px;
+  //float:right;
+  //vertical-align: middle;
+  //overflow: hidden;
 
 }
 
-.site-nav ul li {
-  display: inline-block;
-  list-style-type: none;
+.site_nav .a{
+  color: $headingdarkgreen;
+  font size:0.9em;
+  margin-left: 20px;
+  font-weight: 400;
 }
+
+// .site-nav ul {
+//   float:right;
+//   vertical-align: middle;
+//   margin:0;
+//   padding:0;
+
+// }
+
+// .site-nav ul li {
+//   display: inline-block;
+//   list-style-type: none;
+// }
 
 
 // .site-nav ul li a {
@@ -485,6 +497,50 @@ footer nav a:hover.adobe-logo {
 // .hero .wrap img.insert {
 //   top: 50px;
 // }
+
+.section--primary-flex-container {
+  display:flex;
+  background: $iceberg-blue;
+  height: 485px;
+  width:100%;
+  position: relative;
+  background-image: url(../assets/iceberg.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  align-items: center;
+}
+
+  // display: -webkit-flex;
+  // display: flex;
+  // flex-direction: row;
+  // height: 485px;
+  // width: 100%;
+  // background-color: $white;
+  // align-items: center;
+
+.primarytext-flex-item{
+  padding-left: 40px;
+  padding-right:20px;
+  float:right;
+  color: $white;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+.primarysvg-flex-item{
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 285px;
+  height: 315px;
+  background:url('../assets/logo.svg') no-repeat;
+  vertical-align: middle;
+}
+
 .section--what-flex-container {
   display: -webkit-flex;
   display: flex;
@@ -494,6 +550,7 @@ footer nav a:hover.adobe-logo {
   background-color: $white;
   align-items: center;
 }
+
 
 
 .whatsvg-flex-item{
