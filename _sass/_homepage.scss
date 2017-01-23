@@ -24,10 +24,6 @@ img {
   border: none;
 }
 
-body {
-  margin-top: 90px;
-}
-
 h1,
 h2,
 h3,
@@ -84,10 +80,6 @@ ul li {
   color: #777;
 }
 
-ul li {
-  list-style: disc;
-}
-
 a {
   color: $headingdarkgreen;
   text-decoration: none;
@@ -105,25 +97,28 @@ a:hover {
   color: #00a99d;
 }
 
+.site-header {
+  height: 85px;
+}
+
 
 .wrap {
-  width: 80%;
-  max-width: 1200px;
+  max-width: 1020px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
   position: relative;
 }
 
-%wrap-after {
-  right: 2%;
-  left: auto;
-  bottom: -60px;
-  content: '';
-  position: absolute;
-  border-top: 60px #fff solid;
-  border-left: transparent 60px solid;
-  border-right: transparent 60px solid;
-  z-index: 2;
+.wrap--site-header {
+  @extend .wrap;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
 }
+
 .flex-container {
   float:right;
   display: -webkit-flex;
@@ -133,7 +128,7 @@ a:hover {
   -webkit-align-items: center;
   align-items: center;
   flex-wrap: wrap;
-         
+
         }
 .flex-item {
   display:flex;
@@ -146,19 +141,6 @@ a:hover {
 .flex-item img{
   flex-grow:0;
   flex-shrink:0;
-}
-
-
-.wrap--reverse {
-  text-align: right;
-  padding-right: 0;
-  padding-left: 25%;
-}
-
-.wrap--center {
-  text-align: center;
-  min-height: 130px;
-  margin-top: 40px;
 }
 
 // .section--primary {
@@ -292,27 +274,19 @@ a:hover {
 //   transition:color .2s linear;
 // }
 
-.logo {
-  float: left;
+.logo__mark {
   line-height: 36px;
-  margin-left: -10px;
-  width: 60px;
-  height: 60px;
+  margin-right: 4px;
+  width: 50px;
+  height: 50px;
   vertical-align: middle;
 }
 
-.logo-title{
+.logo__title{
   position:relative;
   font-size: 2em;
-  color: $headingdarkgreen;
-  vertical-align: middle;
-}
-
-//move to typography
-.site-title {
-  letter-spacing: -.05em;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 1.5625rem;
+  font-weight: 200;
 }
 
 .site-nav {
@@ -326,23 +300,26 @@ a:hover {
 
 }
 
-.site_nav .a{
+.site_nav a{
   color: $headingdarkgreen;
-  font-size:.9em;
+  font-size: .9rem;
   margin-left: 20px;
   font-weight: 400;
 }
 
 .site-nav ul {
-  float:right;
   vertical-align: middle;
   margin:0;
   padding:0;
+  list-style: none;
 }
 
-.site-nav ul li {
+.site-nav__item {
   display: inline-block;
-  list-style-type: none;
+  margin-right: 60px;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 //.site-nav ul li a {
@@ -506,7 +483,7 @@ footer nav a:hover.adobe-logo {
   width: 265px;
   height: 190px;
   background:url('../assets/logo.svg') no-repeat;
- 
+
 }
 
 .section--what-flex-container {
@@ -518,7 +495,7 @@ footer nav a:hover.adobe-logo {
   width: 100%;
   background-color: $white;
   bottom: 0;
-  
+
 }
 
 .whatsvg-flex-item{
